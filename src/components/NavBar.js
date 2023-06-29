@@ -5,8 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from "react";
 import logo from '../assets/img/p__1_-removebg-preview.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon2 from '../assets/img/nav-icon3.svg';
+import navIcon3 from '../assets/img/icons8-github-64.png';
 
 function NavBar() {
     const [activeLink, setActiveLink] = useState('home');
@@ -30,6 +30,10 @@ function NavBar() {
         setActiveLink(value);
     }
 
+    const goToConnect = () => {
+        document.getElementById("connect").scrollIntoView({behavior: 'smooth'});
+    }
+
 
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -48,11 +52,11 @@ function NavBar() {
                     </Nav>
                     <span className='navbar-text'>
                         <div className='social-icon'>
-                            <a href='/'><img src={navIcon1} alt=''></img></a>
-                            <a href='/'><img src={navIcon2} alt=''></img></a>
-                            <a href='/'><img src={navIcon3} alt=''></img></a>
+                            <a href='https://www.linkedin.com/in/prathamesh-gaikwad-56519821b' target="_blank"><img src={navIcon1} alt=''></img></a>
+                            <a href='https://instagram.com/prathamesh_.g?igshid=NTc4MTIwNjQ2YQ==' target="_blank"><img src={navIcon2} alt=''></img></a>
+                            <a href='https://github.com/prathameshg11' target="_blank"><img src={navIcon3} alt=''></img></a>
                         </div>
-                        <button className='vvd' onClick={() => console.log('connect')}><span>Let's connect</span></button>
+                        <button className='vvd' onClick={goToConnect}><span>Let's Connect</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>

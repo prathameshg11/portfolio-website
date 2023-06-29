@@ -40,6 +40,10 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (min-width:1700px) {
   main .container {
     max-width: 100%;
@@ -468,6 +472,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 24px;
 }
 
+.proj-imgbx img {
+  width: 100%; /* Set the image width to 100% of the container */
+  height: 100%; /* Set the image height to 100% of the container */
+  object-fit: cover; /* Scale the image while preserving its aspect ratio to fully cover the container */
+  object-position: center;
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -480,6 +491,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx:hover::before {
   height: 100%;
+}
+
+.proj-descp {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .proj-txtx {

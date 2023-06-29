@@ -1,12 +1,13 @@
 import React from 'react'
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import cppIcon from "../assets/img/c-plusplus.svg";
+import pythonIcon from "../assets/img/python.svg";
+import jsIcon from "../assets/img/javascript.svg";
+import htmlICon from "../assets/img/html-5.svg";
+import cssIcon from '../assets/img/css-3.svg';
+import pytchIcon from "../assets/img/pytorch-icon.svg";
 
 function Skills() {
     const responsive = {
@@ -35,30 +36,38 @@ function Skills() {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                            <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                            <p>Harnessing an array of skills, I possess a dynamic range of abilities<br></br> that set me apart in the realm of Technology and Innovation.</p>
+                            <Carousel responsive={responsive} infinite={true} autoPlaySpeed={2000} autoPlay={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <img src={cppIcon} alt="CPP" />
+                                    <h5>C++</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
-                                    <h5>Brand Identity</h5>
+                                    <img src={pythonIcon} alt="Python" />
+                                    <h5>Python</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <img src={jsIcon} alt="Javascript" />
+                                    <h5>Javascript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <img src={htmlICon} alt="HTML" />
+                                    <h5>HTML</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={cssIcon} alt="CSS" />
+                                    <h5>CSS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={pytchIcon} alt="pytch" />
+                                    <h5>Pytorch</h5>
                                 </div>
                             </Carousel>
                         </div>
                     </div>
                 </div>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
+            <img className="background-image-left" src={colorSharp} alt='back'/>
         </div>
     )
 }
